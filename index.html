@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
 
     <!-- Local Style CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
 
     <title>Behrens Lab</title>
 </head>
@@ -23,7 +23,7 @@
     <!-- landing page image -->
     <div class="uk-section-default">
         <div class="uk-background-cover uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true;">
-            <div uk-sticky="topnav sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+            <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
 
                 <!-- sticky nav bar placing on the right side  -->
                 <div class="uk-position-relative">
@@ -31,10 +31,59 @@
                         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                             <div class="uk-navbar-right" style=" margin-right: 20px;">
                                 <ul class="uk-navbar-nav uk-subnav-divider">
-                                    <li><a href="#carouselExampleSlidesOnly" style="color: black;" uk-scroll>Home</a></li>
-                                    <li><a href="#" style="color: black;" uk-scroll>People</a></li>
-                                    <li><a href="#" style="color: black;" uk-scroll>Research</a></li>
-                                    <li><a href="#" style="color: black;" uk-scroll>Mischellaneous</a></li>
+                                    <li class="uk-active">
+                                        <a href="#" style="color: black;" uk-scroll>Members</a>
+                                        <div class="uk-navbar-dropdown">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="people.html">Grad Students</a></li>
+                                                <li><a href="#">Bio</a></li>
+                                                <li><a href="#">Projects</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#" style="color: black;" uk-scroll>Research</a>
+                                        <div class="uk-navbar-dropdown">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="#">Nian Chan</a></li>
+                                                <li><a href="#">Chhanda Biswas</a></li>
+                                                <li><a href="#">Thomas Burn</a></li>
+                                                <li><a href="#">Scott Gordan</a></li>
+                                                <li><a href="#">Danielle Minichino</a></li>
+                                                <li><a href="#">Mailyn Nishiguchi</a></li>
+                                                <li><a href="#"></a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="color: black;" uk-scroll>Publications</a>
+                                        <div class="uk-navbar-dropdown">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="#">Edward M. Behrens</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="color: black;" uk-scroll>Miscellaneous</a>
+                                        <div class="uk-navbar-dropdown">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-active"><a href="#">Lab Photo's</a></li>
+                                                <li><a href="#">Current Projects</a></li>
+                                                <li><a href="#">Lab events</a></li>
+                                                <li><a href="#">Seminars</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li><a href="#" style="color: black;" uk-scroll>Contact</a>
+                                        <div class="uk-nav uk-navbar-dropdown">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="#">Email</a></li>
+                                                <li><a href="#">Phone/Call</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </nav>
@@ -44,14 +93,14 @@
             </div>
             <a href="http://www.med.upenn.edu/"><img src="Assets/landing/psom_logo_blue.png" alt="Perelman School of Medicine at the University of Pennsylvania"
                     width="213" height="60" /></a>
-                    <!-- slideshow images  -->
+            <!-- slideshow images  -->
             <ul class="uk-slideshow-items">
 
                 <li>
-                    <img src="https://source.unsplash.com/random/?science" alt="" uk-cover>
+                    <img src="https://source.unsplash.com/random/?biology" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="https://source.unsplash.com/random/?science" alt="" uk-cover>
+                    <img src="https://source.unsplash.com/random/?chemistry" alt="" uk-cover>
                 </li>
                 <li>
                     <img src="https://source.unsplash.com/random/?science" alt="" uk-cover>
@@ -72,7 +121,7 @@
                     <h2 class="uk-position-medium " style="color: white">
                         Welcome!
                     </h2>
-                </div> -->
+                </div> 
 
 
             </div>
@@ -84,33 +133,28 @@
 
         </div>
     </div>
-    
-    
+
+
     <!--  Blurb of the Lab section -->
-    <div class="uk-section uk-section-muted">
-        <div class="uk-container">
+    <div class="uk-section uk-section-large uk-section-default">
+        <div class="uk-text-center uk-container">
 
-            <h3>Section</h3>
-           
+            <h3>Rheumotology</h3>
+            <hr class="uk-divider-icon" style="color: blue;">
 
-
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
             </div>
         </div>
-
     </div>
-  
-    
-
-
-
-
-
-
 
 
 
