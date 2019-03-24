@@ -6,15 +6,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <!-- Local js -->
+    <script src="../action.js"></script>
 
     <!-- UIKIT CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
 
     <!-- Local Style CSS -->
-    <link rel="stylesheet" type="text/css" href="Assets/css/research.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/css/research.css">
 
     <title>Behrens Lab</title>
 </head>
@@ -27,7 +29,7 @@
 
         <!-- sticky nav bar placing on the right side  -->
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-            <a href="http://www.med.upenn.edu/"><img src="Assets/landing/psom_logo_blue.png"
+            <a href="http://www.med.upenn.edu/"><img src="../Assets/landing/psom_logo_blue.png"
                     alt="Perelman School of Medicine at the University of Pennsylvania" width="213" height="60" /></a>
             <div class="uk-navbar-right">
 
@@ -44,17 +46,20 @@
         </nav>
 
     </div>
-    <div class="uk-section uk-section-muted">
-        <h1 class="uk-heading-line uk-text-center"><span>Current Studies</span></h1>
+    <div id="test" class="uk-section uk-section-muted">
+        <h1 class="uk-heading-line uk-text-center"
+            uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400;repeat: true;"><span>Current Studies</span></h1>
         <article class="uk-comment">
-            <div class="uk-comment-body uk-padding-large">
-                The Behrens lab mainly focuses on dendritic cell biology and their function in normal and pathologic
-                immune
-                responses. In particular, we have developed an interest in Toll-like receptors (TLRs), a set of
-                molecules on
-                dendritic cells that recognize pathogens via common molecular motifs and initiate inflammatory
-                responses.
-                Within this theme of dendritic cell/TLR biology, the lab has two major arms of research:
+            <div class="uk-padding-large">
+                <h4 uk-scrollspy="cls:uk-animation-fade; delay:500;repeat: true">
+                    The Behrens lab mainly focuses on dendritic cell biology and their function in normal and pathologic
+                    immune
+                    responses. In particular, we have developed an interest in Toll-like receptors (TLRs), a set of
+                    molecules on
+                    dendritic cells that recognize pathogens via common molecular motifs and initiate inflammatory
+                    responses.
+                    Within this theme of dendritic cell/TLR biology, the lab has two major arms of research:
+                </h4>
             </div>
         </article>
         <div class="uk-container">
@@ -62,11 +67,12 @@
                 <div>
                     <div class="uk-card uk-card-default">
                         <div class="uk-card-media-top">
-                            <img src="https://source.unsplash.com/random/?biology" style="width: auto; height: 800px" alt="">
+                            <img src="https://source.unsplash.com/random/?biology" style="width: auto; height: 800px"
+                                alt="" uk-scrollspy="cls: uk-animation-fade; delay: 400;repeat: true;">
                         </div>
-                        <div class="uk-card-body">
-                            <h3 class=" uk-text-center uk-card-title">Media Top</h3>
-                            <p>1) TLR signal transduction ? TLRs have classically been thought to signal cells to
+                        <div class="uk-card-body" >
+                            <h3 class=" uk-text-center uk-card-title" uk-scrollspy="cls: uk-animation-slide-left; repeat:true;" >Media Top</h3>
+                            <p uk-scrollspy="cls: uk-animation-slide-right; delay: 300; repeat: true"> 1) TLR signal transduction ? TLRs have classically been thought to signal cells to
                                 generate inflammatory responses via two major signaling conduits, the MyD88 and TRIF
                                 pathways. However, there are many modifying and regulatory pathways that intersect with
                                 these tow major TLR signaling cascades. We are interested in probing the role of
@@ -83,11 +89,11 @@
                 <div>
                     <div class="uk-card uk-card-default">
                         <div class="uk-card-media-top">
-                            <img src="https://source.unsplash.com/random/?science" alt="">
+                            <img src="https://source.unsplash.com/random/?science" alt="" uk-scrollspy="cls: uk-animation-fade; delay: 400;repeat: true;">
                         </div>
                         <div class="uk-card-body">
-                            <h3 class="uk-text-center uk-card-title ">Media Top</h3>
-                            <p>2) Macrophage Activation Syndrome ? MAS is a rare, but fatal complication of a number of
+                            <h3 class="uk-text-center uk-card-title " uk-scrollspy="cls: uk-animation-slide-left; repeat:true;">Media Top</h3>
+                            <p uk-scrollspy="cls: uk-animation-slide-right; delay: 300; repeat: true">2) Macrophage Activation Syndrome ? MAS is a rare, but fatal complication of a number of
                                 rheumatic, oncologic, infectious, and genetic disorders. In particular, 10% of patients
                                 with Systemic Juvenile Idiopathic Arthritis will develop fulminant, life-threatening
                                 MAS. The syndrome consists of a ?sepsis-like? clinical picture, and the pathologic
@@ -116,28 +122,9 @@
             </div>
         </div>
     </div>
-    
 
 
 
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
-    <!-- UIkit JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
-    <!-- Local js -->
-    <script src="action.js"></script>
 
 </body>
 

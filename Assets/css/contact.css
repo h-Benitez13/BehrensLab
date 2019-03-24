@@ -1,6 +1,15 @@
-p {
-    color: oldlace;
-    font-size: 15px;
-    margin-right: 80px;
+h1,p{
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+.uk-section{
+    background-image: url(../../Assets/contact/this.png);
+    background-position: center;
+    background-size: cover;
     
+    height: 1000px;
 }

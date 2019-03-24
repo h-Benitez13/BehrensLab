@@ -6,15 +6,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" -->
-    <!-- crossorigin="anonymous"> -->
+      <!-- UIkit JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+      <!-- Local js -->
+      <script src="../action.js"></script>
 
     <!-- UIKIT CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
 
     <!-- Local Style CSS -->
-    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/css/style.css">
 
     <title>Behrens Lab</title>
 </head>
@@ -27,9 +29,10 @@
 
             <!-- sticky nav bar placing on the right side  -->
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-                <a href="http://www.med.upenn.edu/"><img src="Assets/landing/psom_logo_blue.png" alt="Perelman School of Medicine at the University of Pennsylvania"
+                <a href="http://www.med.upenn.edu/"><img src="../Assets/landing/psom_logo_blue.png" alt="Perelman School of Medicine at the University of Pennsylvania"
                         width="213" height="60" uk-svg/></a>
                 <div class="uk-navbar-right">
+                    
 
                         <ul class="uk-navbar-nav">
                                 <li class="uk-active"><a href="index.html" style="color: black">Home</a></li>
@@ -47,13 +50,13 @@
 
         </div>
 
-        <div class="uk-background-cover uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true;">
+        <div class=" uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true;">
 
             <!-- slideshow images  -->
             <ul class="uk-slideshow-items">
 
                 <li>
-                    <img src="https://source.unsplash.com/random/?biology" alt="" uk-cover>
+                    <img src="https://source.unsplash.com/random/?biology" uk-cover>
                 </li>
                 <li>
                     <img src="https://source.unsplash.com/random/?chemistry" alt="" uk-cover>
@@ -68,13 +71,13 @@
 
 
                 <h1 class="uk-heading-primary uk-heading-line uk-text-center uk-position-large uk-position-center uk-margin-bottom "
-                    style="color:black;">
+                    style="color:white" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true;">
                     <span>Behrens Lab</span>
 
                 </h1>
-                <div class="uk-flex uk-flex-column uk-position-center uk-margin-large-top">
+                <div class="uk-flex uk-flex-column uk-position-center uk-margin-large-top" uk-scrollspy="cls: uk-animation-fade;delay: 500;repeat:true;">
 
-                    <h2 class="uk-position-medium " style="color: white">
+                    <h2 class="uk-position-medium" style="color: white" >
                         Welcome!
                     </h2>
                 </div>
@@ -95,10 +98,10 @@
     <div class="uk-section uk-section-large uk-section-default">
         <div class="uk-text-center uk-container">
 
-            <h3>Rheumotology</h3>
+            <h2 class="uk-heading-line uk-text-center" uk-scrollspy="cls: uk-animation-slide-top; repeat: true;">Rheumotology</h2>
             <hr class="uk-divider-icon" style="color: blue;">
 
-            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid uk-scrollspy="target: > div> p; delay: 500; cls: uk-animation-fade; repeat: true">
                 <div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </div>
@@ -113,21 +116,7 @@
     </div>
 
 
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
-    <!-- UIkit JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
-    <!-- Local js -->
-    <script src="action.js"></script>
+  
 </body>
 
 </html>
