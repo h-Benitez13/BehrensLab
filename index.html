@@ -12,6 +12,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
 
+    <!-- Google Fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap"
+      rel="stylesheet"
+    />
     <!-- UIKIT CSS -->
     <link
       rel="stylesheet"
@@ -21,56 +26,68 @@
     <!-- Local Style CSS -->
     <link rel="stylesheet" type="text/css" href="Assets/css/style.css" />
 
-    <title>Behrens Lab</title>
+    <title>Behrens Rheumatology Lab</title>
   </head>
 
   <body>
-    <!-- landing page image -->
-    <div class="uk-section-default">
-      <div
-        uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar"
-      >
-        <!-- sticky nav bar placing on the right side  -->
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-          <a href="http://www.med.upenn.edu/"
-            ><img
-              src="Assets/landing/psom_logo_blue.png"
-              alt="Perelman School of Medicine at the University of Pennsylvania"
-              width="213"
-              height="60"
-              uk-svg
-          /></a>
-          <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
-              <li class="uk-active">
-                <a href="index.html" style="color: black">Home</a>
-              </li>
-              <li>
-                <a href="people.html" style="color: lightslategrey">Members</a>
-              </li>
-              <li>
-                <a href="research.html" style="color: lightslategrey"
-                  >Research</a
-                >
-              </li>
-              <li>
-                <a href="publications.html" style="color: lightslategrey"
-                  >Publications</a
-                >
-              </li>
-              <li>
-                <a href="random.html" style="color: lightslategrey"
-                  >Miscellaneous</a
-                >
-              </li>
-              <li>
-                <a href="contact.html" style="color: lightslategrey">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+      <!-- PMAC logo -->
+      <a href="http://www.med.upenn.edu/" style="margin: 20px 0px 0px 20px"
+        ><img
+          src="Assets/landing/psom_logo_blue.png"
+          alt="Perelman School of Medicine at the University of Pennsylvania"
+          width="213"
+          uk-svg
+      /></a>
+      <!-- CHOP logo -->
+      <img
+        class="uk-navbar-right"
+        src="Assets/landing/chop.png"
+        alt="Childrens Hospital of Philadelphia"
+        width="300"
+        style="margin-right: 10px"
+        uk-svg
+      />
+    </nav>
 
+    <!-- sticky nav bar placing on the right side  -->
+    <nav
+      id="navIcons"
+      class="uk-navbar-container uk-navbar-transparent"
+      style="margin-bottom: -30px"
+      uk-navbar
+      uk-sticky="bottom: #offset"
+    >
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+          <li class="uk-active">
+            <a href="index.html" style="color: black">Home</a>
+          </li>
+          <li>
+            <a href="people.html" style="color: lightslategrey">Members</a>
+          </li>
+          <li>
+            <a href="research.html" style="color: lightslategrey">Research</a>
+          </li>
+          <li>
+            <a href="publications.html" style="color: lightslategrey"
+              >Publications</a
+            >
+          </li>
+          <li>
+            <a href="random.html" style="color: lightslategrey"
+              >Miscellaneous</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" style="color: lightslategrey">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Intro photos begin -->
+    <div class="uk-section uk-section-small uk-section-default">
       <div
         class=" uk-position-relative uk-visible-toggle uk-light"
         tabindex="-1"
@@ -79,26 +96,30 @@
         <!-- slideshow images  -->
         <ul class="uk-slideshow-items">
           <li>
-            <img src="https://source.unsplash.com/random/?biology" uk-cover />
-          </li>
-          <li>
             <img
-              src="https://source.unsplash.com/random/?chemistry"
-              alt=""
+              src="https://source.unsplash.com/random/?nature"
+              alt="Unsplash placeholder photo of nature"
               uk-cover
             />
           </li>
           <li>
             <img
-              src="https://source.unsplash.com/random/?science"
-              alt=""
+              src="https://source.unsplash.com/random/?chemistry"
+              alt="Unsplash placeholder photo of chemistry"
+              uk-cover
+            />
+          </li>
+          <li>
+            <img
+              src="https://source.unsplash.com/random/?space"
+              alt="Unsplash placeholder photo of space"
               uk-cover
             />
           </li>
         </ul>
 
         <!--Heading within iamges -->
-        <div class="uk-section-muted">
+        <div class="uk-container uk-container-small">
           <h1
             class="uk-heading-primary uk-heading-line uk-text-center uk-position-large uk-position-center uk-margin-bottom "
             style="color:white"
@@ -129,41 +150,41 @@
           uk-slideshow-item="next"
         ></a>
       </div>
-    </div>
 
-    <!--  Blurb of the Lab section -->
-    <div class="uk-section uk-section-large uk-section-default">
-      <div class="uk-text-center uk-container">
-        <h2
-          class="uk-heading-line uk-text-center"
-          uk-scrollspy="cls: uk-animation-slide-top; repeat: true;"
-        >
-          Rheumotology
-        </h2>
-        <hr class="uk-divider-icon" style="color: blue;" />
+      <!--  Blurb of the Lab section -->
+      <div class="uk-section uk-section-large uk-section-default">
+        <div class="uk-text-center uk-container">
+          <h2
+            class="uk-heading-line uk-text-center"
+            uk-scrollspy="cls: uk-animation-slide-top; repeat: true;"
+          >
+            Pediatric Rheumatology
+          </h2>
+          <hr class="uk-divider-icon" style="color: blue;" />
 
-        <div
-          class="uk-grid-match uk-child-width-1-3@m"
-          uk-grid
-          uk-scrollspy="target: > div> p; delay: 500; cls: uk-animation-fade; repeat: true"
-        >
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
-            </p>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
-            </p>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
-            </p>
+          <div
+            class="uk-grid-match uk-child-width-1-3@m"
+            uk-grid
+            uk-scrollspy="target: > div> p; delay: 500; cls: uk-animation-fade; repeat: true"
+          >
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
           </div>
         </div>
       </div>

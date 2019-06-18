@@ -1,3 +1,13 @@
-#test {
-    background-image: linear-gradient(to bottom ,white,rgb(211, 211, 215),rgb(7, 7, 162), rgb(0, 0, 80) )
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "Gentium Basic", serif;
+}
+
+.uk-section {
+  background-color: #ffffff;
+  background-image: linear-gradient(to bottom, #ffffff 0%, #d7e1ec 74%);
 }

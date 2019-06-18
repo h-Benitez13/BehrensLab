@@ -9,7 +9,11 @@
     <!-- UIkit JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
-    
+     <!-- Google Fonts  -->
+     <link
+     href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap"
+     rel="stylesheet"
+   />
 
     <!-- UIKIT CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
@@ -17,46 +21,77 @@
     <!-- Local Style CSS -->
     <link rel="stylesheet" type="text/css" href="Assets/css/people.css">
 
-    <title>Behrens Lab</title>
+    <title>Meet the Lab!</title>
 </head>
 
 <body>
 
-    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-
-        <!-- sticky nav bar placing on the right side  -->
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-            <a href="http://www.med.upenn.edu/"><img src="Assets/landing/psom_logo_blue.png"
-                    alt="Perelman School of Medicine at the University of Pennsylvania" width="213" height="60"
-                    uk-svg /></a>
-            <div class="uk-navbar-right">
+                <!-- PMAC logo -->
+                <a href="http://www.med.upenn.edu/" style="margin: 20px 0px 0px 20px"
+                  ><img
+                    src="Assets/landing/psom_logo_blue.png"
+                    alt="Perelman School of Medicine at the University of Pennsylvania"
+                    width="213"
+                    uk-svg
+                /></a>
+                <!-- CHOP logo -->
+                <img
+                  class="uk-navbar-right"
+                  src="Assets/landing/chop.png"
+                  alt="Childrens Hospital of Philadelphia"
+                  width="300"
+                  style="margin-right: 10px"
+                  uk-svg
+                />
+              </nav>
+          
+              <!-- sticky nav bar placing on the right side  -->
+              <nav
+                id="navIcons"
+                class="uk-navbar-container uk-navbar-transparent"
+                style="margin-bottom: -30px"
+                uk-navbar
+                uk-sticky="bottom: #offset"
+              >
+                <div class="uk-navbar-right">
+                  <ul class="uk-navbar-nav">
+                    <li class="uk-active">
+                      <a href="index.html" style="color: black">Home</a>
+                    </li>
+                    <li>
+                      <a href="people.html" style="color: lightslategrey">Members</a>
+                    </li>
+                    <li>
+                      <a href="research.html" style="color: lightslategrey">Research</a>
+                    </li>
+                    <li>
+                      <a href="publications.html" style="color: lightslategrey"
+                        >Publications</a
+                      >
+                    </li>
+                    <li>
+                      <a href="random.html" style="color: lightslategrey"
+                        >Miscellaneous</a
+                      >
+                    </li>
+                    <li>
+                      <a href="contact.html" style="color: lightslategrey">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
 
-                <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="index.html" style="color: black">Home</a></li>
-                    <li><a href="people.html" style="color: lightslategrey">Members</a></li>
-                    <li><a href="research.html" style="color: lightslategrey">Research</a></li>
-                    <li><a href="publications.html" style="color: lightslategrey">Publications</a></li>
-                    <li><a href="random.html" style="color: lightslategrey">Miscellaneous</a></li>
-                    <li><a href="contact.html" style="color: lightslategrey">Contact</a></li>
-                </ul>
-
-            </div>
-        </nav>
-
-
-
-    </div>
 
 
 
 
-
-    <div class="uk-section uk-section-large uk-section-default">
-        <div class="uk-container">
+    <div class="uk-section uk-section-default">
+        <div class="uk-container uk-container-medium">
 
 
             <h3 class="uk-text-center uk-heading-primary"
-                uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300;repeat: true">Meet the Team!</h3>
+                uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300;repeat: false">Meet the Team!</h3>
             <hr class="uk-divider-icon">
 
 
@@ -65,12 +100,12 @@
 
             
                 <div>
-                    <div class="uk-card  uk-padding  ">
+                    <div class="uk-card    ">
                         <div class="uk-card-media-top ">
                             <img src="Assets/profile/behrens-edward-m.jpg" alt="" uk-svg></a>
                         </div>
                         <div class="js-wrapper uk-height-medium  uk-card-body">
-                            <h3 class="uk-card-title">Edward M. Behrens, MD</h3>
+                            <h3 class="uk-card-title">Edward M. Behrens, M.D.</h3>
                             <hr class="uk-divider-small">
                             <div uk-overflow-auto="selContainer: .uk-height-medium; selContent: .js-wrapper">
                                 <p>Cheif Division of Rheumatology,
@@ -90,12 +125,12 @@
 
                 <div>
 
-                    <div class="uk-card  uk-padding">
+                    <div class="uk-card  ">
                         <div class="uk-card-media-top">
-                            <img src="Assets/profile/Mouse-With-Toy-Funny-Image.jpg" alt="" uk-svg></a>
+                            <img src="Assets/profile/Nian_prof.jpg" alt="" uk-svg></a>
                         </div>
                         <div class="js-wrapper uk-height-medium uk-card-body">
-                            <h3 class="uk-card-title">Nian Chu, MD</h3>
+                            <h3 class="uk-card-title">Niansheng Chu, M.D.</h3>
                             <hr class="uk-divider-small">
                             <div uk-overflow-auto="selContainer: .uk-height-medium; selContent: .js-wrapper">
                                 <p>Lab Manager</p>
@@ -115,12 +150,12 @@
 
                 <div>
 
-                    <div class="uk-card  uk-padding">
+                    <div class="uk-card  ">
                         <div class="uk-card-media-top">
                             <img src="Assets/profile/Mouse-With-Toy-Funny-Image.jpg" alt=""></a>
                         </div>
                         <div class="js-wrapper uk-height-medium uk-card-body">
-                            <h3 class="uk-card-title">Chhanda Biswas, PhD</h3>
+                            <h3 class="uk-card-title">Chhanda Biswas, Ph.D.</h3>
                             <hr class="uk-divider-small">
                             <div uk-overflow-auto="selContainer: .uk-height-medium; selContent: .js-wrapper">
                                 <p>Senior Research Scientist </p>
@@ -137,40 +172,16 @@
 
                 </div>
 
-                <div>
-
-                    <div class="uk-card  uk-padding">
-                        <div class="uk-card-media-top">
-                            <img src="Assets/profile/tom_pro_2.jpg" alt="" uk-svg></a>
-                        </div>
-                        <div class="js-wrapper uk-height-medium uk-card-body">
-                            <h3 class="uk-card-title">Thomas Burn</h3>
-                            <hr class="uk-divider-small">
-                            <div uk-overflow-auto="selContainer: .uk-height-medium; selContent: .js-wrapper">
-                                <p>Grad Student</p>
-                                <p>
-                                    Ph.D. Candidate
-                                    Immunology
-                                    Hometown: Palmerston North, New Zealand
-                                    Education & Training:
-                                    B.S. Massey University
-                                    BSc University of Auckland
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                
 
                 <div>
 
-                    <div class="uk-card  uk-padding">
+                    <div class="uk-card  ">
                         <div class="uk-card-media-top">
                             <img src="Assets/profile/scott_pro_2.jpg" alt="" uk-svg></a>
                         </div>
                         <div class="js-wrapper uk-height-medium uk-card-body">
-                            <h3 class="uk-card-title">Scott Gordan, MD,PhD</h3>
+                            <h3 class="uk-card-title">Scott Gordon, M.D.,Ph.D.</h3>
                             <hr class="uk-divider-small">
                             <div uk-overflow-auto="selContainer: .uk-height-medium; selContent: .js-wrapper">
                                 <p>Resident Fellow</p>
@@ -180,7 +191,7 @@
                                     Education & Training:
                                     Residency The Children’s Hospital of Philadelphia
                                     M.D. Perelman School of Medicine
-                                    Ph.D. University of Pennsylvania
+                                    Ph.D.. University of Pennsylvania
                                     B.S. Haverford College
 
                                 </p>
@@ -191,8 +202,61 @@
                 </div>
 
                 <div>
+                        <div class="uk-card  ">
+                            <div class="uk-card-media-top uk-inline-clip uk-transition-toggle">
+                                <img src="Assets/profile/Aaron.JPG" alt="" uk-svg></a>
+                                <img class="uk-transition-scale-up uk-position-top" src="Assets/profile/aaron-fun.png"
+                                    alt="" uk-svg>
+                            </div>
+    
+                            <div class=" js-wrapper uk-height-medium uk-card-body">
+                                <h3 class="uk-card-title">Aaron Bodansky, M.D.</h3>
+                                <hr class=" uk-divider-small">
+                                <div uk-overflow-auto="selContainer: .uk-height-medium; selContent: .js-wrapper">
+    
+                                    <p>Pediatric Felow, M.D.</p>
+                                    <p>
+                                        Hometown: Seattle, Washington
+                                        Education & Training:
+    
+                                    </p>
+    
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="uk-card  uk-padding">
+
+                <div>
+
+                        <div class="uk-card  ">
+                            <div class="uk-card-media-top">
+                                <img src="Assets/profile/tom_pro_2.jpg" alt="" uk-svg></a>
+                            </div>
+                            <div class="js-wrapper uk-height-medium uk-card-body">
+                                <h3 class="uk-card-title">Thomas Burn</h3>
+                                <hr class="uk-divider-small">
+                                <div uk-overflow-auto="selContainer: .uk-height-medium; selContent: .js-wrapper">
+                                    <p>Graduate Student</p>
+                                    <p>
+                                        Ph.D. Candidate
+                                        Immunology
+                                        Hometown: Palmerston North, New Zealand
+                                        Education & Training:
+                                        B.S. Massey University
+                                        BSc University of Auckland
+    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+
+                <div>
+
+                    <div class="uk-card  ">
                         <div class="uk-card-media-top uk-inline-clip uk-transition-toggle">
                             <img src="Assets/profile/dan_profesional.jpeg" alt="" uk-svg></a>
                             <img class="uk-transition-scale-up uk-position-top" src="Assets/profile/dan-fun.png"
@@ -203,7 +267,7 @@
                             <h3 class="uk-card-title">Danielle Minichino</h3>
                             <hr class="uk-divider-small">
                             <div uk-overflow-auto="selContainer: .uk-height-medium; selContent: .js-wrapper">
-                                <p>Gradaute Student</p>
+                                <p>Graduate Student</p>
                                 <p>
                                     Ph.D. Candidate
                                     CAMB- Cell Metabolism and Physiology
@@ -219,7 +283,7 @@
                 </div>
 
                 <div>
-                    <div class="uk-card  uk-padding">
+                    <div class="uk-card  ">
                         <div class="uk-card-media-top">
                             <img src="Assets/profile/Mailyn_prof.jpg" alt="" uk-svg></a>
                         </div>
@@ -240,31 +304,7 @@
                     </div>
                 </div>
 
-                <div>
-                    <div class="uk-card  uk-padding">
-                        <div class="uk-card-media-top uk-inline-clip uk-transition-toggle">
-                            <img src="Assets/profile/Aaron.JPG" alt="" uk-svg></a>
-                            <img class="uk-transition-scale-up uk-position-top" src="Assets/profile/aaron-fun.png"
-                                alt="" uk-svg>
-                        </div>
-
-                        <div class=" js-wrapper uk-height-medium uk-card-body">
-                            <h3 class="uk-card-title">Aaron, MD</h3>
-                            <hr class=" uk-divider-small">
-                            <div uk-overflow-auto="selContainer: .uk-height-medium; selContent: .js-wrapper">
-
-                                <p>Pediatric Felow, MD</p>
-                                <p>
-                                    Hometown: Seattle, Washington
-                                    Education & Training:
-
-                                </p>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
 
             </div>
 

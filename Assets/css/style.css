@@ -1,10 +1,13 @@
+body,
+h1,
+h2,
+.uk-navbar {
+  font-family: "Gentium Basic", serif;
+}
 .uk-slideshow-items {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 .uk-subnav-divider {
-    color: black;
+  color: black;
 }
-
-
-
