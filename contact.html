@@ -1,122 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- UIkit JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
-    
- 
-     <!-- Google Fonts  -->
-     <link
-     href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap"
-     rel="stylesheet"
-   />
+
+    <!-- Google Fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap"
+      rel="stylesheet"
+    />
     <!-- UIKIT CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css"
+    />
 
     <!-- Local Style CSS -->
-    <link rel="stylesheet" type="text/css" href="Assets/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="Assets/css/contact.css" />
 
     <title>Contact Information</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+      <!-- PMAC logo -->
+      <a href="http://www.med.upenn.edu/" style="margin: 20px 0px 0px 20px"
+        ><img
+          src="Assets/landing/psom_logo_blue.png"
+          alt="Perelman School of Medicine at the University of Pennsylvania"
+          width="213"
+      /></a>
+      <!-- CHOP logo -->
+      <img
+        class="uk-navbar-right"
+        src="Assets/landing/chop.png"
+        alt="Childrens Hospital of Philadelphia"
+        width="300"
+        style="margin-right: 10px"
+      />
+    </nav>
 
+    <!-- sticky nav bar placing on the right side  -->
+    <nav
+      id="navIcons"
+      class="uk-navbar-container uk-navbar-transparent "
+      style="margin-bottom: -30px;"
+      uk-navbar
+      uk-sticky="bottom: #offset"
+    >
+      <div class="uk-navbar-right ">
+        <ul class="uk-navbar-nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="people.html">Members</a>
+          </li>
+          <li>
+            <a href="research.html"> Research</a>
+          </li>
+          <li>
+            <a href="publications.html">Publications</a>
+          </li>
+          <li>
+            <a href="random.html">Miscellaneous</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
+    <!-- Contact page -->
 
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-                <!-- PMAC logo -->
-                <a href="http://www.med.upenn.edu/" style="margin: 20px 0px 0px 20px"
-                  ><img
-                    src="Assets/landing/psom_logo_blue.png"
-                    alt="Perelman School of Medicine at the University of Pennsylvania"
-                    width="213"
-                    uk-svg
-                /></a>
-                <!-- CHOP logo -->
-                <img
-                  class="uk-navbar-right"
-                  src="Assets/landing/chop.png"
-                  alt="Childrens Hospital of Philadelphia"
-                  width="300"
-                  style="margin-right: 10px"
-                  uk-svg
-                />
-              </nav>
-          
-              <!-- sticky nav bar placing on the right side  -->
-              <nav
-                id="navIcons"
-                class="uk-navbar-container uk-navbar-transparent"
-                
-                uk-navbar
-                uk-sticky="bottom: #offset"
-              >
-                <div class="uk-navbar-right">
-                  <ul class="uk-navbar-nav">
-                    <li class="uk-active">
-                      <a href="index.html" style="color: black">Home</a>
-                    </li>
-                    <li>
-                      <a href="people.html" style="color: lightslategrey">Members</a>
-                    </li>
-                    <li>
-                      <a href="research.html" style="color: lightslategrey">Research</a>
-                    </li>
-                    <li>
-                      <a href="publications.html" style="color: lightslategrey"
-                        >Publications</a
-                      >
-                    </li>
-                    <li>
-                      <a href="random.html" style="color: lightslategrey"
-                        >Miscellaneous</a
-                      >
-                    </li>
-                    <li>
-                      <a href="contact.html" style="color: lightslategrey">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+    <div
+      class="uk-section uk-section-small uk-section-default uk-margin-medium-top"
+    >
+      <div
+        class="uk-container uk-light "
+        uk-scrollspy="target: > p; cls: uk-animation-slide-left; delay: 500;repeat: true"
+      >
+        <h1 class="uk-heading-primary uk-heading-bullet">
+          Contact Information
+        </h1>
+        <p>
+          Location:
+          <a
+            uk-tooltip="title: Open in Maps; pos: right;"
+            href="https://www.google.com/maps/place/Children's+Seashore+House,+3615+Civic+Center+Blvd+%231104,+Philadelphia,+PA+19104/data=!4m2!3m1!1s0x89c6c65bf9bb0895:0x25bacd3ad8a04db6?ved=2ahUKEwiKzvLwk57gAhXLmOAKHbzGDW8Q8gEwAHoECAAQAQ"
+          >
+            3615 Civic Center Blvd #1104, Philadelphia, PA 19104
+          </a>
+        </p>
 
-    <div class="uk-section  uk-section-default">
-       
-        <div class="container  uk-padding "
-            uk-scrollspy="target: > p; cls: uk-animation-slide-left; delay: 500;repeat: true">
-
-            <h3 class="uk-heading-primary" style="color: black;"uk-scrollspy="cls: uk-animation-slide-left; delay: 200;repeat: true;">
-                Contact Information
-            </h3>
-            <p >
-                Location:
-                <a uk-tooltip="title: Open in Maps; pos: top;"
-                    href="https://www.google.com/maps/place/Children's+Seashore+House,+3615+Civic+Center+Blvd+%231104,+Philadelphia,+PA+19104/data=!4m2!3m1!1s0x89c6c65bf9bb0895:0x25bacd3ad8a04db6?ved=2ahUKEwiKzvLwk57gAhXLmOAKHbzGDW8Q8gEwAHoECAAQAQ" >
-                    3615 Civic Center Blvd #1104, Philadelphia, PA 19104
-                </a>
-            </p>
-            
-            <p>
-                Email:<a uk-tooltip="title: Open in Gmail; pos:right;"
-                    href="mailto:behrens@email.chop.edu">behrens@email.chop.edu</a>
-            </p>
-            <p>
-                Office# 215-590-7180.
-            </p>
-            <p>
-                Lab# 267-426-5278
-
-            </h3>
-        </div>
-
+        <p>
+          Office# 215-590-7180.
+        </p>
+        <p>
+          Lab# 267-426-5278
+        </p>
+        <a href="mailto:behrens@email.chop.edu">
+          <button type="button">
+            Email us!
+          </button>
+        </a>
+      </div>
     </div>
-
-
-</body>
-
+  </body>
 </html>

@@ -1,19 +1,35 @@
 body,
 h1,
+h2,
 h3,
 p {
-  color: black;
   font-family: "Gentium Basic", serif;
-}
-
-a {
-  color: black;
+  color: white;
 }
 
 .uk-section {
-  background-image: url(../../Assets/contact/this.png);
-  background-position: center;
+  background-image: url(../contact/this.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
 
-  height: 1000px;
+button {
+  border: 1.3px solid white;
+  border-radius: 5px;
+  padding: 10px 50px 10px 50px;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: transparent;
+  color: white;
+  font-size: 0.9em;
+}
+
+button:hover {
+  background-color: white;
+  color: blue;
+}
+button:active {
+  background: none;
+  border: none;
 }
