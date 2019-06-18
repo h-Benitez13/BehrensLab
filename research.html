@@ -30,61 +30,145 @@
   </head>
 
   <body>
-    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-      <!-- PMAC logo -->
-      <a href="http://www.med.upenn.edu/" style="margin: 20px 0px 0px 20px"
-        ><img
-          src="Assets/landing/psom_logo_blue.png"
-          alt="Perelman School of Medicine at the University of Pennsylvania"
-          width="213"
+    <div class="uk-container uk-container-large">
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <!-- CHOP logo -->
+        <img
+          id="chopLogo"
+          src="Assets/landing/chop.png"
+          alt="Childrens Hospital of Philadelphia"
+          width="300"
+          style="margin-right: 10px"
           uk-svg
-      /></a>
-      <!-- CHOP logo -->
-      <img
-        class="uk-navbar-right"
-        src="Assets/landing/chop.png"
-        alt="Childrens Hospital of Philadelphia"
-        width="300"
-        style="margin-right: 10px"
-        uk-svg
-      />
-    </nav>
+        />
+        <!-- PMAC logo -->
+        <a id="pmacLogo" href="http://www.med.upenn.edu/"
+          ><img
+            class="uk-navbar-right uk-position-right"
+            style="margin: 20px 0px 0px 0px"
+            src="Assets/landing/psom_logo_blue.png"
+            alt="Perelman School of Medicine at the University of Pennsylvania"
+            width="213"
+            uk-svg
+        /></a>
+      </nav>
 
-    <!-- sticky nav bar placing on the right side  -->
-    <nav
-      id="navIcons"
-      class="uk-navbar-container uk-navbar-transparent"
-      style="margin-bottom: -30px"
-      uk-navbar
-      uk-sticky="bottom: #offset"
-    >
-      <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav">
-          <li class="uk-active">
-            <a href="index.html" style="color: black">Home</a>
-          </li>
-          <li>
-            <a href="people.html" style="color: lightslategrey">Members</a>
-          </li>
-          <li>
-            <a href="research.html" style="color: lightslategrey">Research</a>
-          </li>
-          <li>
-            <a href="publications.html" style="color: lightslategrey"
-              >Publications</a
+      <!-- sticky nav bar placing on the right side  -->
+      <nav
+        id="computerNav"
+        class="uk-navbar-container uk-navbar-transparent"
+        style="margin-bottom: -30px"
+        uk-navbar
+        uk-sticky="bottom: #offset"
+      >
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li class="uk-active">
+              <a href="index.html" style="color: black">Home</a>
+            </li>
+            <li>
+              <a href="people.html" style="color: lightslategrey">Members</a>
+            </li>
+            <li>
+              <a href="research.html" style="color: lightslategrey">Research</a>
+            </li>
+            <li>
+              <a href="publications.html" style="color: lightslategrey"
+                >Publications</a
+              >
+            </li>
+            <li>
+              <a href="random.html" style="color: lightslategrey"
+                >Miscellaneous</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" style="color: lightslategrey">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <br />
+    <!-- Mobile responsive Navbar -->
+    <div id="mobileNav" class="uk-container uk-container-small">
+      <nav class="uk-navbar-container uk-navbar-transparent">
+        <button type="button" uk-toggle="target: #offcanvas-overlay">
+          <span uk-icon="icon: menu; ratio: 1.5"></span>
+        </button>
+
+        <div id="offcanvas-overlay" uk-offcanvas="mode: none;overlay: true">
+          <div
+            class="uk-offcanvas-bar uk-animation-slide-top"
+            style="min-width: 100vw"
+          >
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <ul
+              class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical"
             >
-          </li>
-          <li>
-            <a href="random.html" style="color: lightslategrey"
-              >Miscellaneous</a
-            >
-          </li>
-          <li>
-            <a href="contact.html" style="color: lightslategrey">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+              <li class="uk-heading-primary ">Menu</li>
+              <hr class="uk-divider-icon" />
+              <li class="uk-active">
+                <a href="index.html">
+                  <span
+                    class="uk-margin-small-right"
+                    uk-icon="icon: home"
+                  ></span
+                  >Home</a
+                >
+              </li>
+              <li class="uk-active">
+                <a href="people.html"
+                  ><span
+                    class="uk-margin-small-right"
+                    uk-icon="icon: users"
+                  ></span>
+                  Members</a
+                >
+              </li>
+              <li class="uk-active">
+                <a href="research.html"
+                  ><span
+                    class="uk-margin-small-right"
+                    uk-icon="icon: search"
+                  ></span>
+                  Research</a
+                >
+              </li>
+
+              <li class="uk-active">
+                <a href="publications.html"
+                  ><span
+                    class="uk-margin-small-right"
+                    uk-icon="icon: copy"
+                  ></span>
+                  Publications</a
+                >
+              </li>
+              <li class="uk-active">
+                <a href="random.html"
+                  ><span
+                    class="uk-margin-small-right"
+                    uk-icon="icon: play"
+                  ></span>
+                  Mischellaneous</a
+                >
+              </li>
+              <li class="uk-active">
+                <a href="contact.html"
+                  ><span
+                    class="uk-margin-small-right"
+                    uk-icon="icon: file-edit"
+                  ></span>
+                  Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
     <!-- Current study section -->
 
@@ -110,10 +194,7 @@
       </article>
       <!-- Container -->
       <div class="uk-container uk-container-large">
-        <div
-          class="uk-child-width-1-2@m uk-margin-left uk-margin-right"
-          uk-grid
-        >
+        <div class="uk-child-width-1-2@m " uk-grid>
           <div>
             <div class="uk-card uk-box-shadow-hover-large uk-card-default">
               <div class="uk-card-media-top">

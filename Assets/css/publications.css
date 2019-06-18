@@ -6,3 +6,38 @@ h4,
 p {
   font-family: "Gentium Basic", serif;
 }
+
+#computerNav {
+  display: block;
+}
+
+#mobileNav {
+  display: none;
+}
+
+@media screen and (min-width: 550px) {
+  #computerNav {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #mobileNav {
+    display: block;
+    margin-bottom: 70px;
+  }
+  .uk-border-circle {
+    margin-left: 20px;
+  }
+
+  #computerNav,
+  .uk-width-expand {
+    display: none;
+  }
+  #chopLogo {
+    display: none;
+  }
+  #pmacLogo {
+    position: left;
+  }
+}

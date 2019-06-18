@@ -1,0 +1,28 @@
+#computerNav {
+  display: block;
+}
+
+#mobileNav {
+  display: none;
+}
+
+@media screen and (min-width: 550px) {
+  #computerNav {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #mobileNav {
+    display: block;
+  }
+  #computerNav {
+    display: none;
+  }
+  #chopLogo {
+    display: none;
+  }
+  #pmacLogo {
+    position: left;
+  }
+}

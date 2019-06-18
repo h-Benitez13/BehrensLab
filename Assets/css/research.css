@@ -11,3 +11,34 @@ p {
   background-color: #ffffff;
   background-image: linear-gradient(to bottom, #ffffff 0%, #d7e1ec 74%);
 }
+
+#computerNav {
+  display: block;
+}
+
+#mobileNav {
+  display: none;
+}
+
+@media screen and (min-width: 550px) {
+  #computerNav {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #mobileNav {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  #computerNav {
+    display: none;
+  }
+  #chopLogo {
+    display: none;
+  }
+  #pmacLogo {
+    position: left;
+  }
+}

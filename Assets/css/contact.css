@@ -8,13 +8,14 @@ p {
 }
 
 .uk-section {
-  background-image: url(../contact/this.png);
+  background-image: url(../contact/contact_img.png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+  min-width: 100vw;
 }
 
-button {
+#contactBttn {
   border: 1.3px solid white;
   border-radius: 5px;
   padding: 10px 50px 10px 50px;
@@ -25,11 +26,40 @@ button {
   font-size: 0.9em;
 }
 
-button:hover {
+#contactBttn:hover {
   background-color: white;
   color: blue;
 }
-button:active {
+#contactBttn:active {
   background: none;
   border: none;
+}
+
+#computerNav {
+  display: block;
+}
+
+#mobileNav {
+  display: none;
+}
+
+@media screen and (min-width: 550px) {
+  #computerNav {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #mobileNav {
+    display: block;
+  }
+  #computerNav {
+    display: none;
+  }
+  #chopLogo {
+    display: none;
+  }
+  #pmacLogo {
+    position: left;
+  }
 }
